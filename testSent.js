@@ -7,7 +7,8 @@ function testSentFeb18(num) {
     };
     return result.length;
 };
-console.log(`En la semana de Febrero 14 al 18 se enviaron ${testSentFeb18([1,1,1,1,1,1,1,1,1,1,1,1,1,1])} pruebas`); //Este log imprime el largo fel array
+let totalTestFeb18 = testSentFeb18([1,1,1,1,1,1,1,1,1,1,1,1,1,1]);
+console.log(`En la semana de Febrero 14 al 18 se enviaron ${totalTestFeb18} pruebas`); //Este log imprime el largo fel array
 
 
 function testSentFeb25(num) {
@@ -17,14 +18,15 @@ function testSentFeb25(num) {
     };
     return result.length;
 };
-console.log(`En la semana de Febrero 21 al 25 se enviaron ${testSentFeb25([])} pruebas`);
+let totalTestFeb25 = testSentFeb25([]);
+console.log(`En la semana de Febrero 21 al 25 se enviaron ${totalTestFeb25} pruebas`);
 
 
 function totalTestSent() {
-    const weekOne = parseFloat(testSentFeb18);
-    const weekTwo = parseFloat(testSentFeb25);
+    const weekOne = parseFloat(totalTestFeb18);
+    const weekTwo = parseFloat(totalTestFeb25);
     let testSofar = `${weekOne +weekTwo}`;
     return testSofar
 }
 
-console.log(`En total se han enviado ${totalTestSent} pruebas en esta convocatoria`); // Este log esta imprimiendo toda la función completa, deberia de imprimir la suma de los valor otros valores
+console.log(`En total se han enviado ${totalTestSent()} pruebas en esta convocatoria`); // Este log imprime el total de pruebas enviadas por convocatoria
