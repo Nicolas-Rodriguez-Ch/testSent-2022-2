@@ -7,7 +7,7 @@ function testSentFeb18(num) {
     };
     return result.length;
 };
-let totalTestFeb18 = testSentFeb18([1,1,1,1,1,1,1,1,1,1,1,1,1,1]);
+let totalTestFeb18 = testSentFeb18([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]);
 console.log(`En la semana de Febrero 14 al 18 se enviaron ${totalTestFeb18} pruebas`); //Este log imprime el largo fel array
 
 
@@ -23,9 +23,7 @@ console.log(`En la semana de Febrero 21 al 25 se enviaron ${totalTestFeb25} prue
 
 
 function totalTestSent() {
-    const weekOne = parseFloat(totalTestFeb18);
-    const weekTwo = parseFloat(totalTestFeb25);
-    let testSofar = `${weekOne +weekTwo}`;
+    let testSofar = totalTestFeb18 + totalTestFeb25;
     return testSofar
 }
 
