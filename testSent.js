@@ -19,7 +19,7 @@ function testSentFeb18(num) {
     };
     return result.length;
 };
-let totalTestFeb18 = testSentFeb18([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]);
+let totalTestFeb18 = testSentFeb18([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1.1,1,1,1,1,1]);
 console.log(`En la semana de Febrero 14 al 18 se enviaron ${totalTestFeb18} pruebas`); 
 
 //Semana febrero 21-25
@@ -30,7 +30,7 @@ function testSentFeb25(num) {
     };
     return result.length;
 };
-let totalTestFeb25 = testSentFeb25([]);
+let totalTestFeb25 = testSentFeb25([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1.1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1.1,1]);
 console.log(`En la semana de Febrero 21 al 25 se enviaron ${totalTestFeb25} pruebas`);
 
 // Total pruebas enviadas en convocatoria 2022 2
